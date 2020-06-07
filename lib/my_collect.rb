@@ -1,7 +1,7 @@
 def my_collect(array)
-  1st_name = []
-  array.each do |i|
-    1st_name << i 
+  return_array = []
+  array.each do |e|
+    return_array << i 
   end
   1st_name
 end
