@@ -9,7 +9,5 @@ def my_collect(array)
   return_array
 end
 
-my_collect(array) do |name|
-  name.split(" ").first
-end
-
+my_collect(array) {|name| name.split(" ").first}
+my_collect(collection) {|lang| lang.upcase}
