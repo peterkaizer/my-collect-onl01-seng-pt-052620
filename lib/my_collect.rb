@@ -1,19 +1,8 @@
 def my_collect(array)
   return_array = []
   array.each do |e|
-    return_array << i 
+    return_array << yield(e) 
   end
-  1st_name
+  return_array
 end
 
-def my_collect(array)
-  
-
-my_collect(array) do |name|
- name.split(" ").first 
-end
-
-collection = ['ruby', 'javascript', 'python', 'objective-c']
-my_collect(collection) do |lang|
-  lang.upcase
-end
